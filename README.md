@@ -10,6 +10,8 @@ Time spent: 2 hours spent in total
 
 The following functionality is complete:
 
+**** IMPORTANT: I believe there are discrepancies with the tutorial video linked with this assignment. Since then there has been a new version of Xcode released and I was unable to link the segment value change (tip %) to the calculateTip function in the view controller. I have tried some workarounds, but it does not let me highlight the entire function as shown in the youtube tutorial. I'm hoping that I can get help and clarify this if accepeted into the class. I hope this doesn't affect my admissions because I am really interested in IOS development :( Thank you for your consideration. 
+
 * [ x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
