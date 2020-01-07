@@ -20,9 +20,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var mainView: UIView!
     
+    @IBOutlet weak var split: UILabel!
+    @IBOutlet weak var incrementStepper: UIStepper!
+    @IBOutlet weak var totalPerPersonField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        incrementStepper.maximumValue = 5
     }
 
 
@@ -56,6 +61,19 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
     }
     
+    @IBAction func splitCount(_ sender: UIStepper) {
+        
+        split.text = Int(sender.value).description
+        let totalText = totalLabel.text!.dropFirst()
+        let total = Double(totalText) ?? 0
+        print("total: ",total)
+        let splitVal = Double(split.text!) ?? 0
+        print("split val: ", splitVal)
+        let ppp = total/splitVal
+        print(ppp)
+        totalPerPersonField.text = String(format: "$%.2f", ppp)
+        
+    }
     
     
 }
