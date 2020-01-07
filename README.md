@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- I would like to get more clarification on the differences between the new updated xcode version and older versions prior. 
+- I added the ability to split the bill between up to 5 people using  a stepper. 
 
 ## Video Walkthrough 
 
