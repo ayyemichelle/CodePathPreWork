@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet var mainView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,7 +33,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
-        
+        switch (tipControl.selectedSegmentIndex) {
+        case 0:
+            mainView.backgroundColor = UIColor.yellow
+        case 1:
+            mainView.backgroundColor = UIColor.orange
+        case 2:
+            mainView.backgroundColor = UIColor.green
+        default: break
+        }
         // ** many of the controls are different and the tutorial posted on youtube is now outdated. I wasn't able to figure out how to tie the segment event of the value being changed to this function. Dragging it as described in the tutorial did not work. **
         
         // get the bill
